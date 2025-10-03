@@ -318,7 +318,7 @@
         </div>
         
         <!-- Embedded PDF Viewer -->
-       <!-- Enhanced PDF Viewer for Mobile -->
+     <!-- Fixed PDF Viewer for Mobile -->
 <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.2s">
     <div class="col-12">
         <div class="card border-0 shadow-lg">
@@ -326,22 +326,54 @@
                 <h4 class="mb-0"><i class="fas fa-utensils me-2"></i>Menu Card</h4>
             </div>
             <div class="card-body p-0">
-                <!-- Google Docs PDF Viewer (Works on Mobile) -->
+                <!-- Google Docs PDF Viewer - Works on Mobile -->
                 <div class="ratio ratio-16x9 mobile-pdf-container">
                     <iframe 
-                        src="https://docs.google.com/gview?url=https://yourwebsite.com/menu.pdf&embedded=true" 
+                        src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://your-website.com/menu.pdf" 
                         class="embed-responsive-item w-100 h-100"
                         style="border: none;"
                         title="Restaurant Menu PDF"
                     >
                         <p>Your browser does not support PDFs. 
-                        <a href="menu.pdf">Download the PDF</a> to view it.</p>
+                        <a href="menu.pdf" target="_blank">Open PDF</a> to view it.</p>
                     </iframe>
+                </div>
+            </div>
+            <div class="card-footer text-center bg-light">
+                <div class="row">
+                    <div class="col-md-6 mb-2">
+                        <a href="menu.pdf" class="btn btn-outline-primary w-100" target="_blank">
+                            <i class="fas fa-external-link-alt me-2"></i>Open in New Tab
+                        </a>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <a href="menu.pdf" class="btn btn-success w-100" download>
+                            <i class="fas fa-download me-2"></i>Download Menu
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<style>
+.mobile-pdf-container {
+    min-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .mobile-pdf-container {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mobile-pdf-container {
+        min-height: 300px;
+    }
+}
+</style>
 
 <!-- Alternative PDF.js Viewer -->
 <!-- <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.2s">

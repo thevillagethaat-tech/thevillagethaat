@@ -191,7 +191,7 @@
                                     <h5>Expert Chefs</h5>
                                     <p>
                                         Award-winning chefs with decades of
-                                        expertise create exceptional dining
+                                        expertise create exceptional food
                                         experiences.
                                     </p>
                                 </div>
@@ -319,31 +319,33 @@ Delivery and Take Away and Cloud Kitchen. Please do order and enjoy the quintess
         </div>
         
         <!-- Embedded PDF Viewer -->
-        <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.2s">
-            <div class="col-12">
-                <div class="card border-0 shadow-lg">
-                    <div class="card-header bg-primary text-white text-center py-3">
-                        <h4 class="mb-0"><i class="fas fa-utensils me-2"></i>Menu Card</h4>
-                    </div>
-                    <div class="card-body p-0">
-                        <!-- PDF Embed -->
-                        <div class="ratio ratio-16x9">
-                            <iframe 
-                                src="menu.pdf" 
-                                class="embed-responsive-item" 
-                                style="border: none;"
-                                allow="autoplay"
-                                title="Restaurant Menu PDF"
-                            >
-                                <p>Your browser does not support PDFs. 
-                                <a href="menu.pdf">Download the PDF</a> to view it.</p>
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       <!-- Simple Mobile-Friendly PDF Viewer -->
+<div class="mobile-pdf-container" style="height: 600px;">
+    <iframe 
+        src="menu.pdf" 
+        style="width: 100%; height: 100%; border: none;"
+        title="Restaurant Menu PDF"
+    >
+        <p>Your browser does not support PDFs. 
+        <a href="menu.pdf">Download the PDF</a> to view it.</p>
+    </iframe>
+</div>
 
+<style>
+.mobile-pdf-container {
+    height: 600px;
+}
+@media (max-width: 768px) {
+    .mobile-pdf-container {
+        height: 400px;
+    }
+}
+@media (max-width: 576px) {
+    .mobile-pdf-container {
+        height: 300px;
+    }
+}
+</style>
         
         </div>
 
@@ -483,9 +485,8 @@ Delivery and Take Away and Cloud Kitchen. Please do order and enjoy the quintess
                                 class="fa fa-quote-left fa-2x text-primary mb-3"
                             ></i>
                             <p>
-                                "The best Indian restaurant I've ever been to!
-                                The pasta was perfectly al dente and the service
-                                was impeccable. We'll definitely be back!"
+                                "The best Indian cloud kitchen I've ever experienced
+                                The food was perfectly made. We'll definitely order again!"
                             </p>
                             <div class="d-flex align-items-center">
                                 <img
@@ -507,8 +508,7 @@ Delivery and Take Away and Cloud Kitchen. Please do order and enjoy the quintess
                             ></i>
                             <p>
                                 "Amazing atmosphere and even better food! The
-                                wine pairing suggestions were spot on. A perfect
-                                place for our anniversary dinner."
+                                food pairing suggestions were spot on."
                             </p>
                             <div class="d-flex align-items-center">
                                 <img
@@ -531,7 +531,7 @@ Delivery and Take Away and Cloud Kitchen. Please do order and enjoy the quintess
                             <p>
                                 "The attention to detail in every dish is
                                 remarkable. Fresh ingredients and authentic
-                                flavors that transport you straight to Italy!"
+                                flavors.!"
                             </p>
                             <div class="d-flex align-items-center">
                                 <img
@@ -553,7 +553,7 @@ Delivery and Take Away and Cloud Kitchen. Please do order and enjoy the quintess
                             ></i>
                             <p>
                                 "Outstanding service and the most delicious
-                                tiramisu I've ever tasted. The staff made us
+                                food I've ever tasted. The staff made us
                                 feel like family. Highly recommended!"
                             </p>
                             <div class="d-flex align-items-center">

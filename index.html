@@ -318,97 +318,92 @@
         </div>
         
         <!-- Embedded PDF Viewer -->
-     <!-- Fixed PDF Viewer for Mobile -->
-<div class="row justify-content-center wow fadeInUp" data-wow-delay="0.2s">
-    <div class="col-12">
-        <div class="card border-0 shadow-lg">
-            <div class="card-header bg-primary text-white text-center py-3">
-                <h4 class="mb-0"><i class="fas fa-utensils me-2"></i>Menu Card</h4>
-            </div>
-            <div class="card-body p-0">
-                <!-- Google Docs PDF Viewer - Works on Mobile -->
-                <div class="ratio ratio-16x9 mobile-pdf-container">
-                    <iframe 
-                        src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://your-website.com/menu.pdf" 
-                        class="embed-responsive-item w-100 h-100"
-                        style="border: none;"
-                        title="Restaurant Menu PDF"
-                    >
-                        <p>Your browser does not support PDFs. 
-                        <a href="menu.pdf" target="_blank">Open PDF</a> to view it.</p>
-                    </iframe>
-                </div>
-            </div>
-            <div class="card-footer text-center bg-light">
-                <div class="row">
-                    <div class="col-md-6 mb-2">
-                        <a href="menu.pdf" class="btn btn-outline-primary w-100" target="_blank">
-                            <i class="fas fa-external-link-alt me-2"></i>Open in New Tab
-                        </a>
+    <!-- Menu Start -->
+<div class="container-xxl py-5">
+    <div class="container" id="menu">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="section-title ff-secondary text-center text-primary fw-normal">
+                Food Menu
+            </h5>
+            <h1 class="mb-5">Our Delicious Menu</h1>
+            <p class="mb-4">Browse through our complete menu below</p>
+        </div>
+        
+        <!-- PDF Viewer Section -->
+        <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-12">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-header bg-primary text-white text-center py-3">
+                        <h4 class="mb-0"><i class="fas fa-utensils me-2"></i>Menu Card</h4>
                     </div>
-                    <div class="col-md-6 mb-2">
-                        <a href="menu.pdf" class="btn btn-success w-100" download>
-                            <i class="fas fa-download me-2"></i>Download Menu
-                        </a>
+                    <div class="card-body p-0">
+                        <!-- Google Docs PDF Viewer - Fixed URL -->
+                        <div class="ratio ratio-16x9 mobile-pdf-container">
+                            <iframe 
+                                src="https://docs.google.com/gview?url=https://your-website.com/menu.pdf&embedded=true" 
+                                class="embed-responsive-item w-100 h-100"
+                                style="border: none;"
+                                title="Restaurant Menu PDF"
+                            >
+                                <p>Your browser does not support PDFs. 
+                                <a href="menu.pdf" target="_blank">Open PDF</a> to view it.</p>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center bg-light">
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <a href="menu.pdf" class="btn btn-outline-primary w-100" target="_blank">
+                                    <i class="fas fa-external-link-alt me-2"></i>Open in New Tab
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <a href="menu.pdf" class="btn btn-success w-100" download>
+                                    <i class="fas fa-download me-2"></i>Download Menu
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
-<style>
-.mobile-pdf-container {
-    min-height: 500px;
-}
-
-@media (max-width: 768px) {
-    .mobile-pdf-container {
-        min-height: 400px;
-    }
-}
-
-@media (max-width: 576px) {
-    .mobile-pdf-container {
-        min-height: 300px;
-    }
-}
-</style>
-
-<!-- Alternative PDF.js Viewer -->
-<!-- <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.2s">
-    <div class="col-12">
-        <div class="card border-0 shadow-lg">
-            <div class="card-header bg-primary text-white text-center py-3">
-                <h4 class="mb-0"><i class="fas fa-utensils me-2"></i>Menu Card</h4>
-            </div>
-            <div class="card-body p-0">
-                <div id="pdf-viewer" style="height: 600px; overflow: auto;">
-                    <canvas id="pdf-canvas" class="w-100"></canvas>
-                </div>
-                <div class="text-center p-3">
-                    <button id="prev-page" class="btn btn-primary me-2">Previous</button>
-                    <span id="page-num">Page: 1</span>
-                    <button id="next-page" class="btn btn-primary ms-2">Next</button>
+        <!-- Alternative: Direct PDF Embedding -->
+        <div class="row justify-content-center mt-4 d-none">
+            <div class="col-12">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-header bg-primary text-white text-center py-3">
+                        <h4 class="mb-0"><i class="fas fa-file-pdf me-2"></i>Direct PDF View</h4>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="ratio ratio-16x9 mobile-pdf-container">
+                            <embed 
+                                src="menu.pdf" 
+                                type="application/pdf" 
+                                class="w-100 h-100"
+                                title="Restaurant Menu PDF"
+                            >
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div> -->
 
-<!-- Download Options -->
-<div class="text-center mt-4">
-    <p class="text-muted mb-3">Having trouble viewing? Try these options:</p>
-    <div class="row justify-content-center">
-        <div class="col-md-4 mb-2">
-            <a href="menu.pdf" class="btn btn-outline-primary w-100" target="_blank">
-                <i class="fas fa-external-link-alt me-2"></i>Open in New Tab
-            </a>
-        </div>
-        <div class="col-md-4 mb-2">
-            <a href="menu.pdf" class="btn btn-success w-100" download>
-                <i class="fas fa-download me-2"></i>Download PDF
-            </a>
+        <!-- Download Options -->
+        <div class="text-center mt-4">
+            <p class="text-muted mb-3">Having trouble viewing? Try these options:</p>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-2">
+                    <a href="menu.pdf" class="btn btn-outline-primary w-100" target="_blank">
+                        <i class="fas fa-external-link-alt me-2"></i>Open in New Tab
+                    </a>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <a href="menu.pdf" class="btn btn-success w-100" download>
+                        <i class="fas fa-download me-2"></i>Download PDF
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -434,6 +429,7 @@
     }
 }
 </style>
+<!-- Menu End -->
 <!-- Menu End -->
            
 <div class="order-options text-center" id = "order">
